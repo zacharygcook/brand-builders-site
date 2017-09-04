@@ -7,6 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 85px;
+  background-color: #f5f5f5; /* Very, very light grey */
 }
 .footer {
   position: absolute;
@@ -15,5 +16,72 @@ body {
   /* Set the fixed height of the footer here */
   height: 85px;
   line-height: 85px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: black;
 }
+
+
+
+/* Custom navbar styles
+-------------------------------------------------- */
+
+.zach-navbar-wrapper {
+  height: 110px;
+  width: 100%;
+  background-color: white;
+}
+
+.zach-navbar-skinny-top {
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid #b7b0b0;
+  line-height: 25px;
+}
+
+.zach-navbar-fat-bottom {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #b7b0b0;
+  line-height: 85px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-company-logo {
+  /* Interesting information about getting the image to not offset down a few inches like it was doing
+      https://stackoverflow.com/questions/21932860/image-moving-down-inside-of-div */
+  height: 68px;
+  width: auto;
+  display: block;
+}
+
+.zach-navbar-inner-content-wrapper {
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .zach-navbar-inner-content-wrapper {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .zach-navbar-inner-content-wrapper {
+    width: 970px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .zach-navbar-inner-content-wrapper {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zach-navbar-inner-content-wrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
