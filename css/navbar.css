@@ -18,6 +18,38 @@
   line-height: 25px;
 }
 
+.navbar-top-social-links-ul {
+  list-style-top: none;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  float: right;
+}
+
+.navbar-top-social-links-li {
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.top-contact-info-span {
+  font-size: 14px;
+  height: 100%;
+  line-height: 30px;
+  float: right;
+  padding-left: 10px;
+  padding-right: 35px;
+}
+
+.social-media-navbar-img {
+  height: 20px;
+  width: auto;
+}
+
+
+
+
 .zach-navbar-fat-bottom {
   height: 80px;
   width: 100%;
