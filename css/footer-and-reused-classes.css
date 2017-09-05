@@ -24,6 +24,9 @@ body {
 /* Custom navbar styles
 -------------------------------------------------- */
 
+/* Some decent yet simple docs on making your own navbar:
+  https://www.w3schools.com/css/css_navbar.asp */
+
 .zach-navbar-wrapper {
   height: 110px;
   width: 100%;
