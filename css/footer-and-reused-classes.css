@@ -114,3 +114,8 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
+.a-class-no-hover:hover {
+  color: none;
+  text-decoration: none;
+}
