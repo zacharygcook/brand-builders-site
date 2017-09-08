@@ -7,7 +7,7 @@
     use Psr\Http\Message\ResponseInterface as Response;
 
     // HOME ROUTE
-    // 
+    // Alternate way we can start doing routes if we want
     // $app->get('/', function (Request $request, Response $response, $args)   {
 
     //     $vars = [
@@ -16,48 +16,12 @@
     //         'description' => 'Welcome to the official page of Alpha Inc.'
     //         ],
     //     ];
-
-    //     var_dump("Hit this.");
-
     //     return $this->view->render($response, 'home.twig', $vars);
 
     // })->setName('home');
 
 
-    // DESIGNS ROUTE
-    // 
-    // $app->get('/', function (Request $request, Response $response, $args)   {
-
-    //     $vars = [
-    //         'page' => [
-    //         'title' => 'Designs- Brand Builders',
-    //         'description' => 'Check out our designs!'
-    //         ],
-    //     ];  
-
-    //     return $this->view->render($response, 'designs.twig', $vars);
-
-    // })->setName('designs');
-
-
-    // PRODUCTS ROUTE
-    // 
-    // $app->get('/products', function (Request $request, Response $response, $args)   {
-
-    //     $vars = [
-    //         'page' => [
-    //         'title' => 'Products - Brand Builders',
-    //         'description' => 'We offer all of these products!'
-    //         ],
-    //     ];  
-
-    //     return $this->view->render($response, 'products.twig', $vars);
-
-    // })->setName('products');
-
-    // HAIL MARY ROUTE GROUPS SOLUTION
-    // Docs link to related content - https://www.slimframework.com/docs/objects/router.html#route-groups
-    // Works but it doesn't fix anything
+    // Docs link to 'groups' doc info - https://www.slimframework.com/docs/objects/router.html#route-groups
     $app->group('/', function () {
 
 
