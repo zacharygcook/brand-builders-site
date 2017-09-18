@@ -90,4 +90,32 @@
             ];
             return $this->view->render($response, 'quote-request.twig', $vars);    
         });
+
+        $this->get('send-simple-email', function (Request $request, Response $response, $args) { 
+
+            $mail = new PHPMailer;
+
+            // $name = $_POST['contactName'];
+            // $email = $_POST['contactEmail'];
+            // $subject = $_POST['contactSubject'];
+            // $message = $_POST['contactMessage'];
+
+            $mail->addAddress("collegepregame@gmail.com");
+            $mail->addBCC("zach@zachcookhustles.com");
+            $mail->setFrom("zach@groupthreads.com", "Zach");
+
+            $mail->isHTML(false);
+
+            $mail->Subject = "Test email homie";
+            $mail->Body = "TESTING IT :)";
+
+            if(!$mail->send()) {
+                error_log('Mailer Error: ' . $mail->errorMessage());
+                $app->halt(500);
+            } else {
+                echo "Message sent successfully!";
+                return $this->view->render($response, 'quote-request.twig', $vars); 
+            }
+            
+        });
     });

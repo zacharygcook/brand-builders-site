@@ -5,6 +5,7 @@
  *  and bootstrapping
  */
 
+use PHPMailer\PHPMailer\PHPMailer;
 
 // Require composer autoloader
 require __DIR__ . '/vendor/autoload.php';
