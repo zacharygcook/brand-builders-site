@@ -41,8 +41,6 @@
                 ],
             ];
 
-            echo $vars;
-
             return $this->view->render($response, 'home.twig', $vars);    
         });
         $this->get('index', function (Request $request, Response $response, $args) {
