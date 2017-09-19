@@ -28,10 +28,20 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
-                'description' => 'Best apparel company in Austin'
+                    'title' => 'Brand Builders Company',
+                    'description' => 'Best apparel company in Austin',
+
+                ],
+                'active' => [
+                    'home' => 'active',
+                    'products' => '',
+                    'services' => '',
+                    'designs' => '',
+                    'quoteRequest' => '',           
                 ],
             ];
+
+            echo $vars;
 
             return $this->view->render($response, 'home.twig', $vars);    
         });
@@ -39,8 +49,15 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
-                'description' => 'Best apparel company in Austin'
+                    'title' => 'Brand Builders Company',
+                    'description' => 'Best apparel company in Austin',
+                ],
+                'active' => [
+                    'home' => 'active',
+                    'products' => '',
+                    'services' => '',
+                    'designs' => '',
+                    'quoteRequest' => '',           
                 ],
             ];
 
@@ -51,8 +68,15 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
+                'title' => 'Brand Builders Company',
                 'description' => 'Best apparel company in Austin'
+                ],
+                'active' => [
+                    'home' => '',
+                    'products' => 'active',
+                    'services' => '',
+                    'designs' => '',
+                    'quoteRequest' => '',           
                 ],
             ];
             return $this->view->render($response, 'products.twig', $vars);    
@@ -62,8 +86,15 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
+                'title' => 'Brand Builders Company',
                 'description' => 'Best apparel company in Austin'
+                ],
+                'active' => [
+                    'home' => '',
+                    'products' => '',
+                    'services' => 'active',
+                    'designs' => '',
+                    'quoteRequest' => '',           
                 ],
             ];
             return $this->view->render($response, 'services.twig', $vars);    
@@ -73,8 +104,15 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
+                'title' => 'Brand Builders Company',
                 'description' => 'Best apparel company in Austin'
+                ],
+                'active' => [
+                    'home' => '',
+                    'products' => '',
+                    'services' => '',
+                    'designs' => 'active',
+                    'quoteRequest' => '',           
                 ],
             ];
             return $this->view->render($response, 'designs.twig', $vars);    
@@ -84,8 +122,15 @@
 
             $vars = [
                 'page' => [
-                'title' => 'Brand Builders',
+                'title' => 'Brand Builders Company',
                 'description' => 'Best apparel company in Austin'
+                ],
+                'active' => [
+                    'home' => '',
+                    'products' => '',
+                    'services' => '',
+                    'designs' => '',
+                    'quoteRequest' => 'active',           
                 ],
             ];
             return $this->view->render($response, 'quote-request.twig', $vars);    

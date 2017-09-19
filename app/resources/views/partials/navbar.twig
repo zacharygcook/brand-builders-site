@@ -1,6 +1,39 @@
-	
 
-	<div class="zach-navbar-wrapper">
+
+	<!-- START MOBILE / TABLET NAVBAR -->	
+	<nav id="mobile-nav-main-tag" class="d-md-none d-lg-none d-xl-none navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index">
+			<img style="padding-left: 10px; height: 48px; margin-bottom: -3px; width: auto;" src="./img/brand-builders-mobile-logo-height-45px.png" />
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavbarID" aria-controls="mobileNavbarID" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div style="padding-left: 15px; padding-top: 20px;" class="collapse navbar-collapse" id="mobileNavbarID">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item {{ active.home }}">
+					<a class="nav-link" href="index">Home </a>
+				</li>
+				<li class="nav-item {{ active.products }}">
+					<a class="nav-link" href="products">Products</a>
+				</li>
+				<li class="nav-item {{ active.services }}">
+					<a class="nav-link" href="services">Services</a>
+				</li>
+				<li class="nav-item {{ active.designs }}">
+					<a class="nav-link" href="designs">Designs</a>
+				</li>
+				<li class="nav-item {{ active.quoteRequest }}">
+					<a class="nav-link" href="quote-request">Request a Quote</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <!-- END MOBILE / TABLET NAVBAR -->
+
+
+    <!-- START DESKTOP NAVBAR -->
+	<div id="desktop-navbar-outer-wrap" class="d-xs-none zach-navbar-wrapper">
 		<div class="zach-navbar-skinny-top">
 			<div class="zach-navbar-inner-content-wrapper">
 
@@ -65,16 +98,16 @@
 				<div class="navbar-main-options-wrapper">
 					<ul class="zach-navbar-ul">
 						<li class="zach-navbar-li">
-							<a href="products">PRODUCTS</a>
+							<a class="{{ active.products }}" href="products">PRODUCTS</a>
 						</li>
 						<li class="zach-navbar-li">
-							<a href="services">SERVICES</a>
+							<a class="{{ active.services }}" href="services">SERVICES</a>
 						</li>
 						<li class="zach-navbar-li">
-							<a href="designs">DESIGNS</a>
+							<a class="{{ active.designs }}" href="designs">DESIGNS</a>
 						</li>
 						<li class="zach-navbar-li">
-							<a href="quote-request">REQUEST A QUOTE</a>
+							<a class="{{ active.quoteRequest }}" href="quote-request">REQUEST A QUOTE</a>
 						</li>
 					</ul>
 				</div>
@@ -82,3 +115,4 @@
 			</div>
 		</div>
 	</div>
+	<!-- END DESKTOP NAVBAR -->

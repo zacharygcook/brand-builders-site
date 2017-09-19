@@ -4,6 +4,31 @@
 /* Some decent yet simple docs on making your own navbar:
   https://www.w3schools.com/css/css_navbar.asp */
 
+/* Mobile nav styling */
+
+#mobile-nav-main-tag {
+  background-color: #121212 !important;
+}
+
+.nav-link {
+  text-align: left;
+}
+
+.nav-item .nav-link {
+  color: #e5e5e5 !important;
+}
+
+.nav-item .nav-link:hover {
+  font-weight: 600;
+}
+
+.active .nav-link {
+  color: white;
+  font-weight: 600;
+}
+
+/* END Mobile nav styling */
+
 .zach-navbar-wrapper {
 	height: 110px;
 	width: 100%;
@@ -11,6 +36,16 @@
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 768px) {
+  #desktop-navbar-outer-wrap {
+    display: none !important;
+  }
+  #desktop-navbar-inner-wrap {
+    display: none !important;
+  }
+}
+
 
 .zach-navbar-skinny-top {
 	height: 30px;
@@ -129,6 +164,11 @@
 	margin-left: 18px;
 	color: white;
 	line-height: 69px;
+}
+
+.zach-navbar-li .active {
+	font-weight: bold;
+	color: white !important;
 }
 
 .zach-navbar-li a:hover {
